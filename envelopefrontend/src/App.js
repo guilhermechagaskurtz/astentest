@@ -150,7 +150,7 @@ const App = () => {
   return (
     <div>
       <h1>React Frontend</h1>
-      <h2>Create Envelope</h2>
+      <h2>Criar e encaminhar envelope</h2>
       <Formik
         initialValues={{
           descricao: '',
@@ -225,7 +225,7 @@ const App = () => {
       </Formik>
       {createEnvelopeResponse && <div>Response: {JSON.stringify(createEnvelopeResponse)}</div>}
       
-      <h2>Download PDF Envelope Docs</h2>
+      <h2>Baixar PDF do Envelope e salvar no banco</h2>
       <Formik
         initialValues={{
           idEnvelope: '',
@@ -266,7 +266,7 @@ const App = () => {
       </Formik>
       {downloadResponse && <div>Download Response: {JSON.stringify(downloadResponse)}</div>}
 
-      <h2>Consultar Status Envelope</h2>
+      <h2>Consultar status do envelope</h2>
       <Formik
         initialValues={{
           idEnvelope: '',
@@ -286,7 +286,7 @@ const App = () => {
               <ErrorMessage name="idEnvelope" component="div" style={{ color: 'red' }} />
             </div>
             <div>
-              <label>Get Lobs:</label>
+              <label>Lobs:</label>
               <div role="group" aria-labelledby="getLobs">
                 <label>
                   <Field type="radio" name="getLobs" value="true" />
@@ -305,7 +305,7 @@ const App = () => {
           </Form>
         )}
       </Formik>
-      {statusResponse && <div>Status Response: {JSON.stringify(statusResponse)}</div>}
+      {statusResponse && <div>Status: {JSON.stringify(statusResponse)}</div>}
       
       {error && <div style={{ color: 'red' }}>Error: {error}</div>}
 
