@@ -30,7 +30,7 @@ public class RequestObjectService {
     }
 
     public ResponseData sendPostRequest() {
-        String url = "https://plataforma.astenassinatura.com.br/api/nomeDoServico";  // URL do servidor de destino
+        String url = "https://plataforma.astenassinatura.com.br/api/inserirEnvelope";  // URL do servidor de destino
 
         RequestObject requestObject = new RequestObject();
         requestObject.setToken("hDqvhFrC11N5QypP2huHk2OOJfr1FyeQ79p1tt3JCiIoH93GbnkwxF6S60yFQoZwYCzUwZVb-Lk9KvOx1EDnvhGs8MXNidUcK+0u5QGcL3xpP9ZMHUjwlRLvjLL7oD-hPovNFo-50hVHTDejSAMbH84YR+DqYh+-");
